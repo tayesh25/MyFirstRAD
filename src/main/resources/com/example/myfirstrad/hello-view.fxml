@@ -9,15 +9,16 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myfirstrad.HelloController">
    <children>
-      <ListView fx:id="listView" layoutX="27.0" layoutY="73.0" prefHeight="254.0" prefWidth="546.0" />
+      <ListView fx:id="listView" layoutX="20.0" layoutY="73.0" prefHeight="254.0" prefWidth="290.0" />
       <Button fx:id="New" layoutX="27.0" layoutY="25.0" mnemonicParsing="false" onAction="#onActionNew" prefHeight="30.0" prefWidth="117.0" text="New " />
       <Button fx:id="Delete" layoutX="338.0" layoutY="25.0" mnemonicParsing="false" onAction="#onActionDelete" prefHeight="30.0" prefWidth="117.0" text="Delete" />
-      <Button fx:id="Completed" layoutX="469.0" layoutY="25.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="117.0" text="Completed" />
-      <TextField fx:id="textField" layoutX="165.0" layoutY="27.0" onAction="#onActionNew" />
+      <TextField fx:id="textField" layoutX="165.0" layoutY="27.0" onAction="#onActionNew" text="Add or Complete!" />
       <Label layoutX="38.0" layoutY="327.0" prefHeight="48.0" prefWidth="525.0" text="Tahseen's To Do List">
          <font>
             <Font name="System Italic" size="48.0" />
          </font>
       </Label>
+      <Button fx:id="Co1" layoutX="469.0" layoutY="27.0" mnemonicParsing="false" onAction="#OnActionComplete" prefHeight="30.0" prefWidth="117.0" text="Completed" />
+      <ListView fx:id="listView1" layoutX="300.0" layoutY="73.0" prefHeight="254.0" prefWidth="300.0" />
    </children>
 </Pane>
