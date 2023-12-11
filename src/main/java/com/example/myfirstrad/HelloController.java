@@ -31,12 +31,17 @@ public class HelloController {
         listView.getItems().add(whatTheUserTyped);
     }
     public void onActionDelete() {
+
+
         ObservableList selectedIndices = listView.getSelectionModel().getSelectedItems();
         for(Object o : selectedIndices) {
             listView.getItems().remove(o);
-            listView1.getItems().remove(o);
-
         }
+            ObservableList selectedIndices1 = listView1.getSelectionModel().getSelectedItems();
+            for(Object o : selectedIndices1) {
+                listView1.getItems().remove(o);
+            }
+
     }
     public void OnActionComplete() {
         ObservableList selectedIndices = listView.getSelectionModel().getSelectedItems();
